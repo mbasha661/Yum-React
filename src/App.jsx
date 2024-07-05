@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-
-import Footer from './Components/Footer'
-import About_us from './Components/About_us'
-import Contact from './Components/Contact'
+import Layout from './Components/Layout';
+import Hero from './Components/Hero';
 import Menu from './Components/Menu'
 
 export default function App() {
@@ -15,14 +12,22 @@ export default function App() {
 
   return (
     <>
-      <Navbar/>
-      <Home/>
-      
-      <About_us/>
-      <Menu/>
-      <Contact/>
-      <Footer/>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Layout>
+            <Hero />
+          </Layout>
+        </Route>
+        <Route path="/menu">
+          <Layout>
+            <Menu />
+          </Layout>
+        </Route>
+      </Switch>
+    </Router>
     </>
   )
 }
+
 
