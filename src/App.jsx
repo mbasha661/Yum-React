@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css'
 import Layout from './Components/Layout';
 import Hero from './Components/Hero';
-import Menu from './Components/Menu'
+import Menu from './Components/Menu';
+
 
 export default function App() {
   
