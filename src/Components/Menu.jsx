@@ -76,83 +76,20 @@ export default function Menu() {
           <h3>Starters</h3>
         </div>
         <div className="row gy-5">
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-1.png" className="glightbox">
+          {data.map((d,i) =>{
+            return  <div className="col-lg-4 menu-item" key={i}>
+              <a href={d.img} className="glightbox">
               <img
-                src="assets/img/menu/menu-item-1.png"
+                src={d.img}
                 className="menu-img img-fluid"
                 alt=""
               />
             </a>
-            <h4>Magnam Tiste</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$5.95</p>
-          </div>
-          {/* Menu Item */}
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-2.png" className="glightbox">
-              <img
-                src="assets/img/menu/menu-item-2.png"
-                className="menu-img img-fluid"
-                alt=""
-              />
-            </a>
-            <h4>Aut Luia</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$14.95</p>
-          </div>
-          {/* Menu Item */}
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-3.png" className="glightbox">
-              <img
-                src="assets/img/menu/menu-item-3.png"
-                className="menu-img img-fluid"
-                alt=""
-              />
-            </a>
-            <h4>Est Eligendi</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$8.95</p>
-          </div>
-          {/* Menu Item */}
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-4.png" className="glightbox">
-              <img
-                src="assets/img/menu/menu-item-4.png"
-                className="menu-img img-fluid"
-                alt=""
-              />
-            </a>
-            <h4>Eos Luibusdam</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$12.95</p>
-          </div>
-          {/* Menu Item */}
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-5.png" className="glightbox">
-              <img
-                src="assets/img/menu/menu-item-5.png"
-                className="menu-img img-fluid"
-                alt=""
-              />
-            </a>
-            <h4>Eos Luibusdam</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$12.95</p>
-          </div>
-          {/* Menu Item */}
-          <div className="col-lg-4 menu-item">
-            <a href="assets/img/menu/menu-item-6.png" className="glightbox">
-              <img
-                src="assets/img/menu/menu-item-6.png"
-                className="menu-img img-fluid"
-                alt=""
-              />
-            </a>
-            <h4>Laboriosam Direva</h4>
-            <p className="ingredients">Lorem, deren, trataro, filede, nerada</p>
-            <p className="price">$9.95</p>
-          </div>
+            <h4>{d.id}</h4>
+            <p className="ingredients">{d.description}</p>
+            <p className="price">${d.price}</p>
+            </div>
+          })}
           {/* Menu Item */}
         </div>
       </div>
