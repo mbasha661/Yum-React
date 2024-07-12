@@ -4,36 +4,42 @@
             "id" :"Magnam Tiste",
             "img":"src/img/menu-item-1.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "breakfast",
             "price":5.95 
         },
         {
             "id" :"Aut Luia",
             "img":"src/img/menu-item-2.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "breakfast",
             "price":14.95 
         },
         {
             "id" :"Est Eligendi",
             "img":"src/img/menu-item-3.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "lunch",
             "price":8.95
         },
         {
             "id" :"Eos Luibusdam",
             "img":"src/img/menu-item-4.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "lunch",
             "price":12.95
         },
         {
             "id" :"Luibusdam",
             "img":"src/img/menu-item-5.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "dinner",
             "price":11.34
         },
         {
             "id" :"Laboriosam Direva",
             "img":"src/img/menu-item-6.png",
             "description":" Lorem, deren, trataro, filede, nerada",
+            "category" : "dinner",
             "price":9.95 
         }
     ]
